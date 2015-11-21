@@ -2,17 +2,26 @@ package com.example.plainolnotes;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
 public class EditorActivity extends ActionBarActivity {
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+    private ImageView image;
 
     private String action;
     private EditText editor;
@@ -24,6 +33,12 @@ public class EditorActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
 
+
+        Button button = (Button) findViewById(R.id.button);
+        image = (ImageView) findViewById(R.id.image);
+        if(!hasCamera()){
+            button.setEnabled(false);
+        }
         editor = (EditText) findViewById(R.id.editText);
 
         Intent intent = getIntent();
@@ -46,6 +61,10 @@ public class EditorActivity extends ActionBarActivity {
         }
     }
 
+    private boolean hasCamera(){
+        return getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -122,5 +141,19 @@ public class EditorActivity extends ActionBarActivity {
     @Override
     public void onBackPressed() {
         finishEditing();
+    }
+
+    public void launchCamera(View view){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
+            Bundle extras = data.getExtras();
+            Bitmap photo = (Bitmap) extras.get("data");
+            image.setImageBitmap(photo);
+        }
     }
 }
