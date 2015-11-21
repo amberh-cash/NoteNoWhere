@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/pre-dexed/debug/classes-50ddbb15026b3b0b00e26f5886fbe7850501e3f2.jar" />
+    </item>
+    <item
+        jar="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/pre-dexed/debug/classes-b34282bb97f4f21acbb6865b4d618765085cf2c6.jar" />
+    </item>
+    <item
+        jar="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-0920f36b505ebab1414950cfc7e2ff8ae73a778d.jar" />
+    </item>
+    <item
+        jar="/Users/ehomepaper/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-2e3bd4ebf5f8f557e4d83f1b4b028fbe5268d782.jar" />
+    </item>
+    <item
+        jar="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/exploded-aar/com.github.markushi/circlebutton/1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="/Users/ehomepaper/Desktop/PlainOlNotes/app/build/intermediates/pre-dexed/debug/classes-f92c75d2836c23369ce9135072f35b001cf712f1.jar" />
+    </item>
+
+</items>

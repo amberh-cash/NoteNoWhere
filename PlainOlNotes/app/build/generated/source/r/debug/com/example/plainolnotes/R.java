@@ -1346,9 +1346,8 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f09001f;
         public static final int action_bar_title=0x7f09001e;
         public static final int action_context_bar=0x7f090032;
-        public static final int action_create_sample=0x7f090043;
         public static final int action_delete=0x7f090042;
-        public static final int action_delete_all=0x7f090044;
+        public static final int action_delete_all=0x7f090043;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_bar=0x7f09002e;
